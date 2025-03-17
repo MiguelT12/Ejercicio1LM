@@ -5,8 +5,9 @@ Curso: DAW1
 Fecha: 17/03/2025
 Ejercicio: 3
 -->
+<!--Definición de una lista de libros-->
 <libros>
-    <libro título="Cien años de soledad" autor="Gabriel García Márquez" año="1967" />
-    <libro título="1984" autor="George Orwell" año="1949" />
-    <libro título="El principito" autor="Antoine de Saint-Exupéry" año="1943" />
+    <libro titulo="La familia de Pascual Duarte" autor="Camilo José Cela" año="1942" />
+    <libro titulo="La estanquera de vallecas" autor="Jose Luis Alonso de Santos" año="1942" />
+    <libro titulo="El principito" autor="Antoine de Saint-Exupéry" año="1943" />
 </libros>

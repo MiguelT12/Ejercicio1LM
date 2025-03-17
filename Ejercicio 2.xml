@@ -5,6 +5,7 @@ Curso: DAW1
 Fecha: 17/03/2025
 Ejercicio: 2
 -->
+<!--Definición de hechos históricos con fechas-->
 <hechosHistoricos>
     <hecho descripcion="IBM da a conocer el PC">
         <fecha>
