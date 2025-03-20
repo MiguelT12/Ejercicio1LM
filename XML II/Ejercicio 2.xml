@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Miguel Tejero Garcia-Abad
+Curso: DAW1
+Fecha:20/03/2025
+Ejercicio: 2
+-->
+<!--Definición de jugadores de fútbol-->
+<equipos>
+    <equipo>
+        <nombre>Real Madrid</nombre>
+        <ciudad>Madrid</ciudad>
+        <entrenador>Carlo Ancelotti</entrenador>
+        <jugadores>
+            <jugador posicion="portero">
+                <nombre>Thibaut Courtois</nombre>
+                <nacionalidad>Bélgica</nacionalidad>
+            </jugador>
+            <jugador posicion="delantero">
+                <nombre>Kylian Mbappé</nombre>
+                <nacionalidad>Francia</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+    <equipo>
+        <nombre>Manchester City</nombre>
+        <ciudad>Manchester</ciudad>
+        <entrenador>Pep Guardiola</entrenador>
+        <jugadores>
+            <jugador posicion="mediocentro">
+                <nombre>Mateo Kovacic</nombre>
+                <nacionalidad>Croacia</nacionalidad>
+            </jugador>
+            <jugador posicion="defensa">
+                <nombre>Rubén Días</nombre>
+                <nacionalidad>Portugal</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+</equipos>
