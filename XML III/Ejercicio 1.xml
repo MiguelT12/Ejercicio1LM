@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo xmlns:os="http://example.com/os" xmlns:office="http://example.com/office">
+    <!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha:27/03/2025
+    Ejercicio: 1
+    -->
+
+    <!--Sistemas Operativos-->
+    <os:software>
+        <os:nombre>Ubuntu</os:nombre>
+        <os:desarrollador>Canonical</os:desarrollador>
+        <os:url>https://ubuntu.com/</os:url>
+    </os:software>
+
+    <os:software>
+        <os:nombre>Windows 11</os:nombre>
+        <os:desarrollador>Microsoft</os:desarrollador>
+        <os:url>https://www.microsoft.com/windows</os:url>
+    </os:software>
+
+    <os:software>
+        <os:nombre>MacOS Ventura</os:nombre>
+        <os:desarrollador>Apple Inc.</os:desarrollador>
+        <os:url>https://www.apple.com/macos</os:url>
+    </os:software>
+
+    <!-- Aplicaciones-->
+    <office:software>
+        <office:nombre>Microsoft Office 365</office:nombre>
+        <office:desarrollador>Microsoft</office:desarrollador>
+        <office:url>https://www.microsoft.com/office</office:url>
+    </office:software>
+
+    <office:software>
+        <office:nombre>LibreOffice</office:nombre>
+        <office:desarrollador>The Document Foundation</office:desarrollador>
+        <office:url>https://www.libreoffice.org/</office:url>
+    </office:software>
+
+    <office:software>
+        <office:nombre>Google Docs</office:nombre>
+        <office:desarrollador>Google</office:desarrollador>
+        <office:url>https://docs.google.com/</office:url>
+    </office:software>
+</catalogo>
