@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha:31/03/2025
+    Ejercicio: 2
+    -->
+<!--Jugadores de baloncesto-->
+<!DOCTYPE liga_baloncesto SYSTEM "liga_baloncesto.dtd">
+
+<liga_baloncesto>
+    <jugador>
+        <nombre>LeBron</nombre>
+        <apellidos>James</apellidos>
+        <equipo>
+            <ciudad>Los Angeles</ciudad>
+            <presidente>
+                <nombrePresidente>Donald</nombrePresidente>
+                <apellidosPresidente>Trump</apellidosPresidente>
+            </presidente>
+        </equipo>
+        <edad>39</edad>
+    </jugador>
+    
+    <jugador>
+        <nombre>Stephen</nombre>
+        <apellidos>Curry</apellidos>
+        <equipo>
+            <ciudad>San Francisco</ciudad>
+            <presidente>
+                <nombrePresidente>Donald</nombrePresidente>
+                <apellidosPresidente>Trump</apellidosPresidente>
+            </presidente>
+        </equipo>
+        <edad>36</edad>
+    </jugador>
+</liga_baloncesto>

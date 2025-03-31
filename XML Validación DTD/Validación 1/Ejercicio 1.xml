@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha:31/03/2025
+    Ejercicio: 1
+    -->
+<!--Biblioteca-->
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro+)>
+    <!ELEMENT libro (titulo, editorial, autor, paginas)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT autor (nombre, apellidos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT paginas (#PCDATA)>
+]>
+
+<biblioteca>
+    <libro>
+        <titulo>El Quijote</titulo>
+        <editorial>Porrúa S.A</editorial>
+        <autor>
+            <nombre>Miguel</nombre>
+            <apellidos>de Cervantes</apellidos>
+        </autor>
+        <paginas>863</paginas>
+    </libro>
+    
+    <libro>
+        <titulo>La estanquera de Vallecas</titulo>
+        <editorial>A. Machado Libros S. A.</editorial>
+        <autor>
+            <nombre>José Luis</nombre>
+            <apellidos>Alonso de Santos</apellidos>
+        </autor>
+        <paginas>64</paginas>
+    </libro>
+    
+    <libro>
+        <titulo>La casa de Bernarda Alba</titulo>
+        <editorial>Casals</editorial>
+        <autor>
+            <nombre>Federico</nombre>
+            <apellidos>García Lorca</apellidos>
+        </autor>
+        <paginas>152</paginas>
+    </libro>
+</biblioteca>
