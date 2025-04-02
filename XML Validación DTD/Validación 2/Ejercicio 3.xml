@@ -6,6 +6,23 @@
     Ejercicio: 3
     -->
 <!--Panel de aeropuerto-->
+<!DOCTYPE panel [
+    <!ELEMENT panel (nombreAeropuerto, fecha, vuelos)>
+    <!ELEMENT nombreAeropuerto (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT vuelos (vuelo+)>
+
+    <!ELEMENT vuelo (origen, destino, horaSalida, horaLlegada, compania, diario?)>
+    <!ATTLIST vuelo codigo ID #REQUIRED>
+    <!ATTLIST vuelo estado (C | E | R) "E">
+
+    <!ELEMENT origen (#PCDATA)>
+    <!ELEMENT destino (#PCDATA)>
+    <!ELEMENT horaSalida (#PCDATA)>
+    <!ELEMENT horaLlegada (#PCDATA)>
+    <!ELEMENT compania (#PCDATA)>
+    <!ELEMENT diario EMPTY>
+]>
 <panel>
     <nombreAeropuerto>Barajas</nombreAeropuerto>
     <fecha>2025-04-02</fecha>
