@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 2/04/2025
+    Ejercicio: 3
+    -->
+<!--Panel de aeropuerto-->
+<panel>
+    <nombreAeropuerto>Barajas</nombreAeropuerto>
+    <fecha>2025-04-02</fecha>
+    
+    <vuelos>
+        <vuelo codigo="1234" estado="E">
+            <origen>Madrid</origen>
+            <destino>Barcelona</destino>
+            <horaSalida>10:30</horaSalida>
+            <horaLlegada>11:45</horaLlegada>
+            <compania>Raynair</compania>
+            <diario/>
+        </vuelo>
+
+        <vuelo codigo="4321" estado="R">
+            <origen>París</origen>
+            <destino>Madrid</destino>
+            <horaSalida>12:00</horaSalida>
+            <horaLlegada>14:15</horaLlegada>
+            <compania>Air France</compania>
+        </vuelo>
+
+        <vuelo codigo="5678" estado="C">
+            <origen>Berlín</origen>
+            <destino>Madrid</destino>
+            <horaSalida>15:00</horaSalida>
+            <horaLlegada>17:20</horaLlegada>
+            <compania>Iberia</compania>
+            <diario/>
+        </vuelo>
+    </vuelos>
+</panel>

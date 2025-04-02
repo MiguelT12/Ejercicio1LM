@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 2/04/2025
+    Ejercicio: 1
+    -->
+<!--Transacción comercial-->
+<factura numero="12345" fecha="02-04-2025">
+    
+    <datos-emisor>
+        <nombre>Librería Central</nombre>
+        <cif>A12345678</cif>
+        <telefono>987654321</telefono>
+    </datos-emisor>
+    
+    <datos-cliente>
+        <nombre>Biblioteca Municipal</nombre>
+        <cif>B87654321</cif>
+        <telefono>912345678</telefono>
+    </datos-cliente>
+
+    <detalle-factura importe="150">
+        <linea codigo-articulo="1" tipo="Libro">
+            <descripcion>Don Quijote de la Mancha</descripcion>
+            <cantidad>3</cantidad>
+            <pvp>25.00</pvp>
+        </linea>
+
+        <linea codigo-articulo="D1" tipo="DVD">
+            <descripcion>Documental</descripcion>
+            <cantidad>2</cantidad>
+            <pvp>15.50</pvp>
+            <oferta/>
+        </linea>
+
+        <linea codigo-articulo="V1" tipo="Varios">
+            <descripcion>Marcapáginas</descripcion>
+            <cantidad>5</cantidad>
+            <pvp>2.50</pvp>
+        </linea>
+    </detalle-factura>
+</factura>

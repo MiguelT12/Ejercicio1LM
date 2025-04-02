@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 2/04/2025
+    Ejercicio: 2
+    -->
+<!--Equipos de baloncesto-->
+<!DOCTYPE EquiposNBA [
+  <!ELEMENT EquiposNBA (equipo|nombre)*>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT equipo (nombre, titulos, posicion, quinteto)>
+  <!ATTLIST equipo conferencia CDATA #REQUIRED>
+  <!ELEMENT titulos (#PCDATA)>
+  <!ELEMENT posicion (#PCDATA)>
+  <!ELEMENT quinteto (#PCDATA)>
+]>
+<EquiposNBA>
+    <equipo localidad="este">
+        <nombre>Boston Celtics</nombre>
+        <titulos>17</titulos>
+        <posicion>1</posicion>
+        <quinteto>Marcus Smart, Jayson Tatum, Jaylen Brown, Al Horford, Robert Williams</quinteto>
+    </equipo>
+    <equipo localidad="oeste">
+        <nombre>Los Angeles Lakers</nombre>
+        <titulos>17</titulos>
+        <posicion>2</posicion>
+        <quinteto>LeBron James, Anthony Davis, Russell Westbrook, Austin Reaves, Dwight Howard</quinteto>
+    </equipo>
+    <equipo localidad="este">
+        <nombre>Miami Heat</nombre>
+        <titulos>3</titulos>
+        <posicion>5</posicion>
+        <quinteto>Jimmy Butler, Bam Adebayo, Tyler Herro, Kyle Lowry, Caleb Martin</quinteto>
+    </equipo>
+    <nombre>Red Bulls</nombre>
+</EquiposNBA>
