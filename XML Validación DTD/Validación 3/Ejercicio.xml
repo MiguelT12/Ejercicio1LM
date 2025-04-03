@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 3/04/2025
+    Ejercicio: 1
+    -->
+<!--Panel de aeropuerto-->
+<!DOCTYPE cuentos [
+    <!ELEMENT cuentos (cuento+)>
+    <!ELEMENT cuento (personajes, trama)>
+    <!ATTLIST cuento 
+        codigo CDATA #REQUIRED 
+        titulo CDATA #REQUIRED>
+    
+    <!ELEMENT personajes (personaje+)>
+    <!ELEMENT personaje (nombre, genero)>
+    <!ATTLIST personaje 
+        id ID #REQUIRED>
+    
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT trama (#PCDATA)>
+]>
+<cuentos>
+    <cuento codigo="1" titulo="El Principito">
+        <personajes>
+            <personaje id="1">
+                <nombre>Principito</nombre>
+                <genero>M</genero>
+            </personaje>
+        </personajes>
+        <trama>Un niño descubre la esencia de la vida a través de amistad, amor y reflexión</trama>
+    </cuento>
+    
+    <cuento codigo="2" titulo="La Casa Misteriosa">
+        <personajes>
+            <personaje id="2">
+                <nombre>María</nombre>
+                <genero>F</genero>
+            </personaje>
+        </personajes>
+        <trama>Un misterio y una casa abandonada.</trama>
+    </cuento>
+</cuentos>
