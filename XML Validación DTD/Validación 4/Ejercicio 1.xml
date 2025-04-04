@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 4/04/2025
+    Ejercicio: 1
+    -->
+<!--Correción de error-->
+
+<!DOCTYPE numeros[
+    <!ELEMENT numero(#PCDATA)>
+]>
+
+<numeros>
+    <numero>25</numero>
+</numeros>

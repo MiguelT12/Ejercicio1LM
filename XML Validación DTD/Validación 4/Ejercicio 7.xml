@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 4/04/2025
+    Ejercicio: 7
+    -->
+<!--Correción de error-->
+<!DOCTYPE musicos[
+    <!ELEMENT musicos(musico*)>
+    <!ELEMENT musico((nombre, apodo), fechaNacimiento)>
+    <!ELEMENT nombre(#PCDATA)>
+    <!ELEMENT apodo(#PCDATA)>
+    <!ELEMENT fechaNacimiento(#PCDATA)>
+]>
+
+<musicos>
+    <musico>
+        <nombre>Antonio Vivaldi</nombre>
+        <fechaNacimiento>28 de marzo de 1936</fechaNacimiento>
+    </musico>
+    <musico>
+        <apodo>el viejo peluca</apodo>
+        <fechaNacimiento>21 de marzo de 1685</fechaNacimiento>
+    </musico>
+</musicos>

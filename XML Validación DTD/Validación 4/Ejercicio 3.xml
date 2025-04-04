@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 4/04/2025
+    Ejercicio: 3
+    -->
+<!--Correción de error-->
+<!DOCTYPE colores[
+    <!ELEMENT colores(color)*>
+    <!ELEMENT color(#PCDATA)>
+]>
+
+<colores>
+    <color>azul marino</color>
+    <color>negro</color>
+    <color>amarillo</color>
+</colores>

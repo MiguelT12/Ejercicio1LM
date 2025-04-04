@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 4/04/2025
+    Ejercicio: 4
+    -->
+<!--Correción de error-->
+<!DOCTYPE flores[
+    <!ELEMENT flores(color+)>
+    <!ELEMENT flor(#PCDATA)>
+]>
+
+<flores>
+    <flor>margarita</flor>
+</flores>
