@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 4/04/2025
+    Ejercicio: 6
+    -->
+<!--Correción de errores-->
+
+<!DOCTYPE paises[
+    <!ELEMENT paises(pais*)>
+    <!ELEMENT pais(nombre, unionEuropea, otan)>
+    <!ELEMENT nombre(#PCDATA)>
+    <!ELEMENT unionEuropea EMPTY>
+    <!ELEMENT otan EMPTY>
+]>
+
+<paises>
+    <pais>
+        <nombre>España</nombre>
+        <unionEuropea/>
+        <otan/>
+    </pais>
+
+    <pais>
+        <nombre>Noruega</nombre>
+        <unionEuropea/>
+        <otan/>
+    </pais>
+    
+    <pais>
+        <nombre>Austria</nombre>
+        <unionEuropea/>
+        <otan/>
+    </pais>
+</paises>

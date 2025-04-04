@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 4/04/2025
+    Ejercicio: 7
+    -->
+<!--Correción de errores-->
+
+<!DOCTYPE colores[
+    <!ELEMENT colores(color*)>
+    <!ELEMENT color(nombreSvg, codigo)>
+    <!ELEMENT codigo (rgb | cmyk)
+    <!ELEMENT nombreSvg(#PCDATA)>
+    <!ELEMENT rgb (#PCDATA)>
+    <!ELEMENT cmyk (#PCDATA)>
+]>
+
+<colores>
+    <color>
+        <nombreSvg>Purple</nombreSvg>
+        <codigo>
+            <rgb>#800080</rgb>
+        </codigo>
+    </color>
+    
+    <color>
+        <nombreSvg>Purple</nombreSvg>
+        <codigo>
+            <cmyk>#00FF007F</rgb>
+        </codigo>
+    </color>
+</colores>
