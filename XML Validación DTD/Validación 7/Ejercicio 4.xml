@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 5/04/2025
+    Ejercicio: 4
+    -->
+<!--Correción de errores-->
+
+<!DOCTYPE resoluciones [
+    <!ELEMENT resoluciones (resolution*)>
+    <!ELEMENT resolution EMPTY>
+    <!ATTLIST resolution 
+        nombre NMTOKEN #REQUIRED
+        alto CDATA #REQUIRED
+        ancho CDATA #REQUIRED>
+]>
+
+<resoluciones>
+    <resolution nombre="VGA" alto="480" ancho="640"/>
+    <resolution nombre="XGA" alto="1024" ancho="768"/>
+    <resolution nombre="HD_1080" alto="1920" ancho="1080"/>
+</resoluciones>

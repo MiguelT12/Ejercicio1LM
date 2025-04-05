@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 5/04/2025
+    Ejercicio: 1
+    -->
+<!--Correción de errores-->
+
+<!DOCTYPE libro [
+    <!ELEMENT libro EMPTY>
+    <!ATTLIST libro autor NMTOKEN #REQUIRED>
+]>
+<libro autor="Mario Vargas Llosa"/>

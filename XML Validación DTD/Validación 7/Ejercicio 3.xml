@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 5/04/2025
+    Ejercicio: 3
+    -->
+<!--Correción de errores-->
+
+<!DOCTYPE cosasPorHacer [
+    <!ELEMENT cosasPorHacer (cosa+)>
+    <!ELEMENT cosa (#PCDATA)>
+    <!ATTLIST cosa 
+        fecha CDATA #REQUIRED
+        asunto CDATA #REQUIRED
+        fechalimite CDATA #REQUIRED>
+]>
+<cosasPorHacer>
+    <cosa fecha="20 de febrero de 2011" asunto="Preparar ejercicios de DTDs" fechalimite="1 de marzo de 2011"/>
+
+    <cosa fecha="21 de febrero de 2011" asunto="Preparar tema XSLT" fechalimite="5 de marzo de 2011"/>
+</cosasPorHacer>
