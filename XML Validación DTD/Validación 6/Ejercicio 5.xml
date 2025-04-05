@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 5/04/2025
+    Ejercicio: 5
+    -->
+<!--Correción de errores-->
+
+<!DOCTYPE futbol [
+    <!ELEMENT futbol (jugador*)>
+    <!ELEMENT jugador EMPTY>
+    <!ATTLIST jugador 
+        nombre NMTOKENS #REQUIRED
+        codigo ID #REQUIRED>
+]>
+
+<futbol>
+    <jugador nombre="Alfredo Di Stéfano" codigo="J1"/>
+    <jugador nombre="Edson Arantes do Nascimento Pelé" codigo="J2"/>
+    <jugador nombre="Diego Armando Maradona" codigo="J3"/>
+    <jugador nombre="Johan Cruyff" codigo="J4"/>
+</futbol>

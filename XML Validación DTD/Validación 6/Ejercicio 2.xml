@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 5/04/2025
+    Ejercicio: 2
+    -->
+<!--Correción de errores-->
+
+<!DOCTYPE pelicula [
+    <!ELEMENT pelicula EMPTY>
+    <!ATTLIST pelicula 
+        titulo CDATA #IMPLIED
+        genero CDATA #IMPLIED>
+]>
+
+<pelicula titulo="La diligencia" genero="oeste"/>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 5/04/2025
+    Ejercicio: 3
+    -->
+<!--Correción de errores-->
+
+<!DOCTYPE cuadros [
+    <!ELEMENT cuadros (cuadro+)>
+    <!ELEMENT cuadro EMPTY>
+    <!ATTLIST cuadro 
+        titulo ID #REQUIRED
+        autor CDATA #REQUIRED>
+]>
+
+<cuadros>
+    <cuadro titulo="Adan y Eva" autor="Alberto Durero"/>
+    <cuadro titulo="Adan y Eva" autor="Lucas Cranach, el viejo"/>
+</cuadros>

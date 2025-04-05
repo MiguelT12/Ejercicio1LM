@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 4/04/2025
+    Ejercicio: 1>
+    -->
+<!--Correción de errores-->
+
+<!DOCTYPE persona [
+    <!ELEMENT persona EMPTY>
+    <!ATTLIST persona 
+        nombre CDATA #IMPLIED
+        dni CDATA #REQUIRED>
+]>
+
+<persona dni="03141592E"/>
