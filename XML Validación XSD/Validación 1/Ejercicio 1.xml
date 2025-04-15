@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha:15/04/2025
+    Ejercicio: 2
+    -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="dniType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{8}[A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="numeroLimitado">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="500"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="alumno">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="direccion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="calle" type="xs:string"/>
+              <xs:element name="numero" type="numeroLimitado"/>
+              <xs:element name="ciudad" type="xs:string"/>
+              <xs:element name="provincia" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="telefono" type="xs:integer" minOccurs="0" maxOccurs="5"/>
+      </xs:sequence>
+      <xs:attribute name="dni" type="dniType" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
