@@ -2,55 +2,30 @@
 <!--
     Nombre: Miguel Tejero Garcia-Abad
     Curso: DAW1
-    Fecha:15/04/2025
+    Fecha: 16/04/2025
     Ejercicio: 2
     -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-  <xs:simpleType name="dniType">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="\d{8}[A-Z]"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name="numeroLimitado">
+  <xs:simpleType name="edadTipo">
     <xs:restriction base="xs:integer">
-      <xs:minInclusive value="0"/>
-      <xs:maxInclusive value="500"/>
+      <xs:minExclusive value="0"/>
+      <xs:maxExclusive value="131"/>
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:simpleType name="provinciaLimitada">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Badajoz"/>
-      <xs:enumeration value="Cáceres"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:complexType name="direccionType">
-    <xs:sequence>
-      <xs:element name="calle" type="xs:string"/>
-      <xs:element name="numero" type="numeroLimitado"/>
-      <xs:element name="ciudad" type="xs:string"/>
-      <xs:element name="provincia" type="provinciaLimitada"/>
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="alumnoType">
-    <xs:sequence>
-      <xs:element name="nombre" type="xs:string"/>
-      <xs:element name="direccion" type="direccionType" minOccurs="1" maxOccurs="2"/>
-      <xs:element name="telefono" type="xs:integer" minOccurs="0" maxOccurs="5"/>
-    </xs:sequence>
-    <xs:attribute name="dni" type="dniType" use="required"/>
-  </xs:complexType>
-
-  <xs:element name="alumnos">
+  <xs:element name="fichas">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="alumno" type="alumnoType" maxOccurs="unbounded"/>
+        <xs:element name="ficha" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="edad" type="edadTipo"/>
+            </xs:sequence>
+            <xs:attribute name="numero" type="xs:integer" use="required"/>
+          </xs:complexType>
+        </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
 </xs:schema>

@@ -2,46 +2,29 @@
 <!--
     Nombre: Miguel Tejero Garcia-Abad
     Curso: DAW1
-    Fecha:15/04/2025
+    Fecha: 16/04/2025
     Ejercicio: 5
     -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-  <xs:simpleType name="versionPattern">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="\d+\.\d+"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:complexType name="infoType">
-    <xs:sequence>
-      <xs:element name="titulo" type="xs:string"/>
-      <xs:element name="autor" type="xs:string"/>
-      <xs:element name="email" type="xs:string" minOccurs="0"/>
-      <xs:element name="version" type="versionPattern" minOccurs="0"/>
-      <xs:element name="fecha" type="xs:date" minOccurs="0"/>
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="qType">
-    <xs:sequence>
-      <xs:element name="qtext" type="xs:string"/>
-      <xs:element name="a" type="xs:string"/>
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="partType">
-    <xs:sequence>
-      <xs:element name="q" type="qType" maxOccurs="unbounded"/>
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:element name="faq">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="info" type="infoType"/>
-        <xs:element name="part" type="partType" maxOccurs="unbounded"/>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-</xs:schema>
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="fichas.xsd">
+  <ficha>
+    <nombre>Antonio Machado Ruiz</nombre>
+    <iniciales>AMR</iniciales>
+    <edad>22</edad>
+  </ficha>
+  <ficha>
+    <nombre>Mario Moreno</nombre>
+    <iniciales>MMM</iniciales>
+    <edad>23</edad>
+  </ficha>
+  <ficha>
+    <nombre>Ada Lovelace</nombre>
+    <iniciales>ALO</iniciales>
+    <edad>24</edad>
+  </ficha>
+  <ficha>
+    <nombre>Pablo Ruiz Picasso</nombre>
+    <iniciales>PRP</iniciales>
+    <edad>24</edad>
+  </ficha>
+</fichas>

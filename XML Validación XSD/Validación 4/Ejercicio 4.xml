@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha:15/04/2025
+    Ejercicio: 4
+    -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="heladoFresaChocolate">
+    <xs:sequence>
+      <xs:element name="fresa" type="xs:empty"/>
+      <xs:element name="chocolate" type="xs:empty"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="heladoVainillaChocolate">
+    <xs:sequence>
+      <xs:element name="vainilla" type="xs:empty"/>
+      <xs:element name="chocolate" type="xs:empty"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="heladeria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="helado" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:choice>
+              <xs:element name="fresaChocolate" type="heladoFresaChocolate"/>
+              <xs:element name="vainillaChocolate" type="heladoVainillaChocolate"/>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="xs:empty"/>
+</xs:schema>
