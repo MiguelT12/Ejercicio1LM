@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 16/04/2025
+    Ejercicio: 3
+    -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="capitulo1">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="Capítulo \d"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  
+  <xs:element name="capitulo2">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="Capítulo \d{1,2}"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  
+  <xs:element name="capitulo3">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="Capítulo [1-9]\d?"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  
+  <xs:element name="capitulo4">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="Capítulo \d+"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  
+  <xs:element name="valor1">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="[^0-9]Z"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  
+  <xs:element name="valor2">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="ABB{2,4}C"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  
+  <xs:element name="valor3">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="RSS+([3-8]?)"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  
+  <xs:element name="valor4">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="COD\d{3}.+"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+</xs:schema>
