@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Nombre: Miguel Tejero Garcia-Abad
+    Curso: DAW1
+    Fecha: 19/04/2025
+    Ejercicio: 1
+    -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!--xs:pattern y xs:length -->
+  <xs:element name="clave1">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:length value="10"/>
+        <xs:pattern value="[a-zA-Z0-9]*"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <!--xs:pattern -->
+  <xs:element name="clave2">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="[a-zA-Z0-9]{10}"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+</xs:schema>
